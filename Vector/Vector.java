@@ -52,7 +52,7 @@ public class Vector<E> implements Iterable<E>
 		size++;
 		for(int i = index; i < size; i++)
 		{
-			E temp = get.(i);
+			E temp = get(i);
 			data[i] = toAdd;
 			toAdd = temp;
 		}
@@ -121,7 +121,7 @@ public class Vector<E> implements Iterable<E>
 		data[index] = obj;
 		return output;
 	}
-	
+
 	public void clear()
 	{
 		data = new Object[capacity];
@@ -134,14 +134,14 @@ public class Vector<E> implements Iterable<E>
 			return true;
 		return false;
 	}
-
+	
 	public boolean contains(E obj)
 	{
 		if(indexOf(obj) >= 0)
 			return true;
 		return false;
 	}
-	
+
 	public int indexOf(E obj)
 	{
 		if(obj == null)
@@ -162,7 +162,7 @@ public class Vector<E> implements Iterable<E>
 		}
 		return -1;
 	}
-
+	
 	public Iterator<E> iterator()
 	{
 		return new VectorIterator<E>(this);
