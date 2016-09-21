@@ -121,4 +121,51 @@ public class Vector<E> implements Iterable<E>
 		data[index] = obj;
 		return output;
 	}
+	
+	public void clear()
+	{
+		data = new Object[capacity];
+		size = 0;
+	}
+	
+	public boolean isEmpty()
+	{
+		if(size == 0)
+			return true;
+		return false;
+	}
+
+	public boolean contains(E obj)
+	{
+		if(indexOf(obj) >= 0)
+			return true;
+		return false;
+	}
+	
+	public int indexOf(E obj)
+	{
+		if(obj == null)
+		{
+			for(int i = 0; i < size; i++)
+			{
+			if(data[i] == null)
+				return i;
+			}
+		}
+		else
+		{
+			for(int i = 0; i < size; i++)
+			{
+				if(obj.equals(data[i]))
+					return i;
+			}
+		}
+		return -1;
+	}
+
+	public Iterator<E> iterator()
+	{
+		return new VectorIterator<E>(this);
+	}
+
 }
