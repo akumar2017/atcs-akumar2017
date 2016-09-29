@@ -1,6 +1,6 @@
 /**
 	Vector Iterator class to create an iterator for Vector
-	@version 9/25/16
+	@version 9/28/16
 	@author Akash Kumar
 */
 import java.util.NoSuchElementException;
