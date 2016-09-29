@@ -1,6 +1,6 @@
 /**
 	Vector class (similar to an array but size is dynamic)
-	@version 9/25/16
+	@version 9/28/16
 	@author Akash Kumar
 */
 
