@@ -13,8 +13,8 @@ public class Netflix
 	public String[] names; 
 	public Vector<Vector> master; 
 	public Vector<Integer> scores;
-	//Sets user 35 to receive recommendations (can be adjusted to whatever you want)
-	public int user = 35;
+	//Sets user 27 to receive recommendations (can be adjusted to whatever you want)
+	public int user = 27;
 	
 	public static void main(String[] args)
 	{
