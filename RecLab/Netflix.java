@@ -9,7 +9,7 @@ import java.lang.String;
 
 public class Netflix
 {
-	//Initializes String and Vectors
+	//Initializes String and Vectors master and scores
 	public String[] names; 
 	public Vector<Vector> master; 
 	public Vector<Integer> scores;
