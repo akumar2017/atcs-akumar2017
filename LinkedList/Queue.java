@@ -1,7 +1,7 @@
 /**
 The Queue interface is a data structure where objects are added to the end and taken from the beginning.
 @author Akash Kumar
-@version 10/14/16
+@version 10/25/16
 */
 
 public interface Queue<E>
