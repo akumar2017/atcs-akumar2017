@@ -1,7 +1,7 @@
 /**
 The Stack interface is a data structure where objects are added	to the top and taken from the top.
 @author Akash Kumar
-@version 10/18/16
+@version 10/25/16
 */
 
 public interface Stack<E>
