@@ -66,7 +66,7 @@ public class LinkedList<E> implements Stack<E>, Queue<E>, Iterable<E>
 	public int size()
 	{
 		return size;
-	}
+	}		
 		
 	/**
 	Adds a new item to a specific spot in the Linked List
@@ -78,7 +78,7 @@ public class LinkedList<E> implements Stack<E>, Queue<E>, Iterable<E>
 	{
 		//Makes sure the index is within the size of the Linked List
 		if (index > size || index < 0 )
-		{
+		{		
 			throw new IndexOutOfBoundsException("Index " + index + " is not within the size: " + size + " of Linked List");
 		}
 		//Checks if the Linked List is empty
@@ -189,7 +189,7 @@ public class LinkedList<E> implements Stack<E>, Queue<E>, Iterable<E>
 		return true;
 				
 	}
-	
+			
 	/**
 	Checks to see if a given value is in the Linked List
 	@param object the item that is being checked for
@@ -237,12 +237,12 @@ public class LinkedList<E> implements Stack<E>, Queue<E>, Iterable<E>
 		size = 0;
 	}
 	
-	/**
+	/**		
 	Returns the item at a given index
 	@param index The spot to be gotten
 	@return the item at the given spot
 	*/
-	public E get(int index)
+	public E get(int index)		
 	{
 		if (index > size || index < 0 )
 		{
@@ -279,7 +279,7 @@ public class LinkedList<E> implements Stack<E>, Queue<E>, Iterable<E>
 	public boolean isEmpty()
 	{
 		return (head == null);
-	}
+	}		
 
 	/** 
 	Returns a string representation of the Linked List
@@ -395,4 +395,4 @@ public class LinkedList<E> implements Stack<E>, Queue<E>, Iterable<E>
 		}
 		return remove(size - 1);
 	}	
-}
+}		
