@@ -4,7 +4,7 @@ import java.util.Iterator;
 /**
 The Iterator Class for Linked Lists
 @author Akash Kumar
-@version 10/20/16
+@version 10/25/16
 */
 public class LinkedListIterator<E> implements Iterator<E>
 {
