@@ -1,7 +1,7 @@
 /**
 ListNode class contains an value that is stored and a pointer to another ListNode. These nodes can be linked together in a LinkedList
 @author Akash Kumar
-@version 10/14/16
+@version 10/25/16
 */
 public class ListNode<E>
 {
