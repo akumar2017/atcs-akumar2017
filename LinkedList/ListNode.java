@@ -1,3 +1,8 @@
+/**
+ListNode class contains an value that is stored and a pointer to another ListNode. These nodes can be linked together in a LinkedList
+@author Akash Kumar
+@version 10/14/16
+*/
 public class ListNode<E>
 {
 	/**
@@ -12,27 +17,27 @@ public class ListNode<E>
 	
 	/**
 	Constructor for ListNode that takes in a value to hold and another ListNode that it will point to
-	@param object The item the ListNode will hold
+	@param obj the value the ListNode will hold, n the pointer to the ListNode
 	@param pointer The next ListNode this one will point to
 	*/
-	public ListNode(E object, ListNode<E> pointer)
+	public ListNode(E obj, ListNode<E> n)
 	{
-		item = object;
-		next = pointer;
+		item = obj;
+		next = n;
 	}
 	
 	/**
 	Constructor for ListNode that takes in a value to hold, but no ListNode to point to
-	@param object The item the ListNode will hold
+	@param object The value the ListNode will hold
 	*/
-	public ListNode(E object)
+	public ListNode(E item)
 	{
-		this(object, null);
+		this(item, null);
 	}
 	
 	/**
-	Returns the item contained in the ListNode
-	@return The Item it holds
+	Returns the value contained in the ListNode
+	@return The value it holds
 	*/
 	public E getItem()
 	{
@@ -50,20 +55,20 @@ public class ListNode<E>
 	
 	/**
 	Sets the object that the ListNode holds to a given value
-	@param object The new value for the ListNode to hold	
+	@param obj the new value for the ListNode to hold	
 	*/
-	public void setItem(E object)
+	public void setItem(E obj)
 	{
-		item = object;
+		item = obj;
 	}
 	
 	/**
 	Sets the next ListNode that this ListNode will point to
 	@param pointer The new ListNode for this ListNode to point to
 	*/
-	public void setNext(ListNode<E> pointer)
+	public void setNext(ListNode<E> node)
 	{
-		next = pointer;
+		next = node;
 	}
 	
 	/**
