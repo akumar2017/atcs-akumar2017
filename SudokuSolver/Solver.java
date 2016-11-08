@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 /**
 This class contains a main methods which runs the solving process of the board.
+@author Akash Kumar
+@version 11/07/16
 */
 public class Solver
 {
@@ -35,6 +37,6 @@ public class Solver
 				}
 			}
 		}
-		System.out.println("The board is unsolvable");
+		System.out.println("The board is not solvable");
 	}
 }
