@@ -3,7 +3,7 @@ The Binary Search Tree Class can find a given item within the tree using a key
 @author Akash Kumar
 @version 12/10/16
 */
-public class BST<E extends Comparable<E>>
+public class BST<E> extends Comparable<E>
 {
 	/**
 	The first item added to the tree
